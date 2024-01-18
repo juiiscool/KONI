@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital@1&family=Borel&family=Glass+Antiqua&family=Zen+Maru+Gothic:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c1d1f7;
+    overflow-x: hidden;
+    margin-bottom: 3%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Zen Maru Gothic', serif;
+    color: #0d339b;
+}
+
+p{
+    font-family: 'Zen Maru Gothic', serif;
+    color: #6384b0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/*responsive*/
+@media (max-width: 1320px) {
+    .grid-container {
+      grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 1140px) {
+    .grid-container {
+      grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 960px) {
+    .grid-container {
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+
+    .copyright{
+        height: 50px;
+        width: 50px;
+        margin-left: 600px;
+    }
+
+    .headbanner{
+        margin-left: 420px;
+    }
+
+    .logo{
+        margin-left: 500px;
+    }
+
+    .headbanner-text {
+        width: 40px;
+    }
+
+    .sec-headbanner p{
+        visibility: hidden;
+    }
+}
+
+/* copyright */
+
+.copyright{
+    position: static;
+    height: 550px;
+    width: 550px;
+    color: black;
+    transform: rotate(270deg);
+    font-family: 'Archivo', sans-serif;
+}
+
+.text-copyright{
+    color: #6d7bb0;
+}
+
+/* headbanner */
+
+.headbanner{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    margin-right: 280px;
+}
+
+.headbanner-text {
+    width: 440px;
+}
+
+.headbanner-text p{
+    font-size: 16px;
+}
+
+.headbanner-pic{
+    background: url('../pictures/371325259_3421335854800335_4602623112982117543_n.jpg')rgb(193,209,247);
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* logo Koni */
+
+.logo{
+    cursor: pointer;
+}
+
+/* second level headbanner */
+
+.sec-headbanner-pic{
+    background: url('../pictures/banaku.jpg')rgb(193,209,247);
+    background-size: fill;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 600px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 5%;
+}
+
+.sec-headbanner h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sec-headbanner p{
+    margin-left: 45%;
+    width: 700px;
+    background-color: #e0e8d4;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 9px;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    position: relative;
+    bottom: 300px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* third level headbanner */
+
+.third-headbanner-pic{
+    background: url('../pictures/vendi.jpg')rgb(193,209,247);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.third-headbanner h3{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.third-headbanner p{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* contacts */
+
+.contact-logos{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.location{
+    width: 100px;
+}
+
+.location a{
+    text-decoration: none;
+}
+
+.location p{
+    color: #0d339b;
+}
+
+.location:hover, .contacts:hover{
+    transform: rotate(20deg);
+}
+
+.galleryLogo:hover{
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+/* hr */
+hr{
+    border: 4px solid #0d339b;
+}
+
+/* gallery page */
+
+.small-heading{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.back p{
+    color: black;
+    cursor: pointer;
+}
+
+.pictures-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px 50px;
+    padding: 10px;
+}
+
+.picture-item{
+    padding: 20px;
+}
+
+@media (max-width: 1320px) {
+    .pictures-grid {
+      grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 1140px) {
+    .pictures-grid {
+      grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 960px) {
+    .pictures-grid {
+      grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .pictures-grid {
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital@1&family=Borel&family=Glass+Antiqua&family=Zen+Maru+Gothic:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/*video prezantimi*/
+
+#prezantimi{
+    max-width: 100%;
+    height: 60%;
+    position: absolute;
+    left: 35%;
+    top: 18%;
+    cursor: pointer;
+}
+
+body{
+    /* background-color: #0024A0; */
+    background-color: #0137A4;
+    overflow: hidden;
+}
+
+/* the circle labyrinth */
+
+.mother{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #fff;
+    height: 600px;
+    width: 600px;
+    visibility: hidden;
+    position: fixed;
+    left: 30%;
+    top: 8%;
+    z-index: 2;
+    background-image: url('../pictures/387103084_17910657695827664_4447261067066964300_n.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    transition: transform .2s;
+}
+  
+.mother:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* copyright */
+
+.copyright{
+    position: static;
+    height: 550px;
+    width: 550px;
+    color: black;
+    transform: rotate(270deg);
+    font-family: 'Archivo', sans-serif;
+    /* font-family: 'Zen Maru Gothic', serif; */
+}
+
+.text-copyright{
+    color: #fff;
+}
+
+@media (max-width:1080px){
+    .mother{
+        height: 400px;
+        width: 400px;
+        left: 28%;
+        top: 18%;
+    }
+
+    #prezantimi{
+        left: 25%;
+        top: 15%;
+    }
+}
+
+@media (max-width:760px){
+    .mother{
+        height: 300px;
+        width: 300px;
+        left: 25%;
+        top: 25%;
+    }
+
+    #prezantimi{
+        left: 15%;
+        top: 18%;
+    }
+}
+
+@media (max-width:500px){
+    .mother{
+        height: 200px;
+        width: 200px;
+        left: 22%;
+        top: 35%;
+    }
+
+    #prezantimi{
+        left: 8%;
+        top: 22%;
+    }
+}
+
+@media (max-width:360px){
+    .mother{
+        height: 200px;
+        width: 200px;
+        left: 20%;
+        top: 35%;
+    }
+
+    #prezantimi{
+        left: 8%;
+        top: 20%;
+    }
+}
+
+/* gallery */
+
